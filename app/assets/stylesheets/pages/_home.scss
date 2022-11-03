@@ -26,9 +26,14 @@
       position: relative;
       .text-absolute {
         position: absolute;
+        padding: 2em;
         top: 2em;
         right: -5em;
         background-color: $grey;
+        &.right {
+          right: auto;
+          left: -5em;
+        }
       }
     }
     .visuel {

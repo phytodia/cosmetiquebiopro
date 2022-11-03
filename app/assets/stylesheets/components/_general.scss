@@ -1,7 +1,9 @@
 header {
   div:first-of-type {
     background-color: $light-brown;
-    height: 20vh;
+    min-height: 20vh;
+    height: auto;
+    padding: 2em 0;
     .header-elements {
       display: flex;
       flex-direction: column;
@@ -10,10 +12,17 @@ header {
       justify-content: center;
       align-items: center;
       .logo {
-        width: 10%;
+        width: 20%;
         height: auto;
       }
       color: white;
+      p {
+        text-align: center;
+        font-size: 1.2em;
+        sup {
+          font-size: 0.7em;
+        }
+      }
     }
   }
   nav {

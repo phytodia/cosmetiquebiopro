@@ -17,6 +17,7 @@ header {
       li {
         padding: 0em 1.5em;
         border-left: solid 1px white;
+        text-transform: uppercase;
         a { text-decoration: none;}
       }
       li:last-of-type { border-right: solid 1px white; }
@@ -50,6 +51,7 @@ footer {
       padding: 0em 1.5em;
       border-left: solid 1px white;
       a { text-decoration: none; color: white;}
+      text-transform: uppercase;
     }
     li:last-of-type { border-right: solid 1px white; }
   }

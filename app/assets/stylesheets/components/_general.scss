@@ -1,7 +1,9 @@
 header {
   div:first-of-type {
     background-color: $light-brown;
-    height: 20vh;
+    min-height: 20vh;
+    height: auto;
+    padding: 2em 0;
     .header-elements {
       display: flex;
       flex-direction: column;
@@ -10,10 +12,17 @@ header {
       justify-content: center;
       align-items: center;
       .logo {
-        width: 10%;
+        width: 20%;
         height: auto;
       }
       color: white;
+      p {
+        text-align: center;
+        font-size: 1.2em;
+        sup {
+          font-size: 0.7em;
+        }
+      }
     }
   }
   nav {
@@ -28,10 +37,17 @@ header {
       list-style: none;
       padding: 0.5em 0;
       li {
-        padding: 0em 1.5em;
         border-left: solid 1px white;
+        opacity: 40%;
         text-transform: uppercase;
-        a { text-decoration: none; color: white;}
+        a { text-decoration: none; color: white; opacity: 40%;
+          padding: 0em 1.5em;
+          &:hover { color: white; opacity: 100%;}
+        }
+        &:hover {
+          opacity: 100%;
+          a { opacity: 100%;}
+        }
       }
       li:last-of-type { border-right: solid 1px white; }
     }
@@ -40,6 +56,9 @@ header {
 main {
   min-height: 100vh;
   background-color: white;
+}
+h2 {
+  color: $brown;
 }
 .inside {
   max-width: 1500px;

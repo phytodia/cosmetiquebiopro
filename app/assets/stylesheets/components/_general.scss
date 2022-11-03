@@ -1,0 +1,25 @@
+header {
+  div:first-of-type {
+    background-color: $orange;
+    height: 20vh;
+  }
+  nav {
+    background-color: $brown;
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding: 0.5em 0;
+      li {
+        padding: 0em 1.5em;
+        border-left: solid 1px white;
+        a { text-decoration: none;}
+      }
+      li:last-of-type { border-right: solid 1px white; }
+    }
+  }
+}
+footer {}

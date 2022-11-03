@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: center;
     ul {
+      max-width: 1500px;
       display: flex;
       margin: 0;
       padding: 0;
@@ -22,10 +23,34 @@ header {
     }
   }
 }
+main {
+  min-height: 100vh;
+  background-color: white;
+}
 .inside {
   max-width: 1500px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
 }
-footer {}
+footer {
+  background-color: $brown;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    max-width: 1500px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0.5em 0;
+    li {
+      padding: 0em 1.5em;
+      border-left: solid 1px white;
+      a { text-decoration: none; color: white;}
+    }
+    li:last-of-type { border-right: solid 1px white; }
+  }
+}

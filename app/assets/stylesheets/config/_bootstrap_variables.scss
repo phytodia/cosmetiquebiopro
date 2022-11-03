@@ -23,3 +23,71 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+
+@font-face {
+  font-family: "YesevaOne";
+  src: font-url('YesevaOne-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "EBGaramond";
+  src: font-url('EBGaramond-Bold.ttf');
+  src: font-url('EBGaramond-ExtraBold.ttf');
+  src: font-url('EBGaramond-SemiBold.ttf');
+  src: font-url('EBGaramond-ExtraBoldItalic.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "EBGaramond";
+  src: font-url('EBGaramond-Regular.ttf');
+  src: font-url('EBGaramond-Medium.ttf');
+  src: font-url('EBGaramond-VariableFont_wght.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "EBGaramond";
+  src: font-url('EBGaramond-ExtraBoldItalic.ttf');
+  src: font-url('EBGaramond-BoldItalic.ttf');
+  src: font-url('EBGaramond-SemiBoldItalic.ttf');
+  src: font-url('EBGaramond-MediumItalic.ttf');
+  src: font-url('EBGaramond-Italic-VariableFont_wght.ttf');
+  font-weight: italic;
+}
+@font-face {
+  font-family: "Arsenal";
+  src: font-url('Arsenal/Arsenal-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Arsenal";
+  src: font-url('Arsenal/Arsenal-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Arsenal";
+  src: font-url('Arsenal/Arsenal-BoldItalic.ttf');
+  src: font-url('Arsenal/Arsenal-Italic.ttf');
+  font-weight: italic;
+}
+@font-face {
+  font-family: "Barlow";
+  src: font-url('Barlow/Barlow-Medium.ttf');
+  src: font-url('Barlow/Barlow-MediumItalic.ttf');
+  src: font-url('Barlow/Barlow-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Barlow";
+  src: font-url('Barlow/Barlow-Light.ttf');
+  src: font-url('Barlow/Barlow-ExtraLight.ttf');
+  font-weight: light;
+}
+@font-face {
+  font-family: "Barlow";
+  src: font-url('Barlow/Barlow-Black.ttf');
+  src: font-url('Barlow/Barlow-BlackItalic.ttf');
+  src: font-url('Barlow/Barlow-Bold.ttf');
+  src: font-url('Barlow/Barlow-ExtraBold.ttf');
+  src: font-url('Barlow/Barlow-ExtraBoldItalic.ttf');
+  font-weight: bold;
+}

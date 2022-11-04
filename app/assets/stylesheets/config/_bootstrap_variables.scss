@@ -56,38 +56,41 @@ $border-radius-sm: 2px;
 @font-face {
   font-family: "Arsenal";
   src: font-url('Arsenal/Arsenal-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Arsenal";
   src: font-url('Arsenal/Arsenal-Bold.ttf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Arsenal";
   src: font-url('Arsenal/Arsenal-BoldItalic.ttf');
   src: font-url('Arsenal/Arsenal-Italic.ttf');
-  font-weight: italic;
 }
-@font-face {
-  font-family: "Barlow";
-  src: font-url('Barlow/Barlow-Medium.ttf');
-  src: font-url('Barlow/Barlow-MediumItalic.ttf');
-  src: font-url('Barlow/Barlow-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Barlow";
-  src: font-url('Barlow/Barlow-Light.ttf');
-  src: font-url('Barlow/Barlow-ExtraLight.ttf');
-  font-weight: light;
-}
+
 @font-face {
   font-family: "Barlow";
   src: font-url('Barlow/Barlow-Black.ttf');
   src: font-url('Barlow/Barlow-BlackItalic.ttf');
   src: font-url('Barlow/Barlow-Bold.ttf');
+  src: font-url('Barlow/Barlow-BoldItalic.ttf');
   src: font-url('Barlow/Barlow-ExtraBold.ttf');
   src: font-url('Barlow/Barlow-ExtraBoldItalic.ttf');
+  src: font-url('Barlow/Barlow-ExtraLight.ttf');
+  src: font-url('Barlow/Barlow-ExtraLightItalic.ttf');
+  src: font-url('Barlow/Barlow-Italic.ttf');
+  src: font-url('Barlow/Barlow-Light.ttf');
+  src: font-url('Barlow/Barlow-LightItalic.ttf');
+  src: font-url('Barlow/Barlow-Medium.ttf');
+  src: font-url('Barlow/Barlow-MediumItalic.ttf');
+  src: font-url('Barlow/Barlow-Regular.ttf');
+  src: font-url('Barlow/Barlow-SemiBold.ttf');
+  src: font-url('Barlow/Barlow-SemiBoldItalic.ttf');
+  src: font-url('Barlow/Barlow-Thin.ttf');
+  src: font-url('Barlow/Barlow-ThinItalic.ttf');
+}
+@font-face {
+  font-family: "Barlow";
+  src: font-url('Barlow/Barlow-Medium.ttf');
   font-weight: bold;
+}
+@font-face {
+  font-family: "Barlow";
+  src: font-url('Barlow/Barlow-Regular.ttf');
+  src: font-url('Barlow/Barlow-Thin.ttf');
+  src: font-url('Barlow/Barlow-ExtraLight.ttf');
+  font-weight: normal;
 }

@@ -41,6 +41,11 @@
   max-width: 100%;
   background-color: $brown !important;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    padding: 20px;
+  }
 }
 .list-unstyled {
   background:white;
@@ -56,6 +61,12 @@
 }
 .list-unstyled.open {
   transform:scaleY(1);
+  li {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 .list-unstyled > li {
   padding:10px 0;

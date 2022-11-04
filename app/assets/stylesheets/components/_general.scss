@@ -12,7 +12,6 @@ header {
       justify-content: center;
       align-items: center;
       .logo {
-        width: 20%;
         height: auto;
       }
       color: white;
@@ -26,7 +25,7 @@ header {
       }
     }
   }
-  nav {
+  #nav {
     background-color: $brown;
     display: flex;
     justify-content: center;
@@ -70,13 +69,16 @@ h2 {
 }
 footer {
   background-color: $brown;
-  height: 10vh;
+  min-height: 10vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   ul {
     max-width: 1500px;
     display: flex;
+    flex-wrap: wrap;
+    height: auto;
     margin: 0;
     padding: 0;
     list-style: none;

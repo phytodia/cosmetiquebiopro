@@ -35,20 +35,24 @@
   top:0;
 }
 
-#container-mobile {
+#mobile-container {
   position:relative;
-  max-width:500px;
+  width: 100%;
+  max-width: 100%;
+  background-color: $brown !important;
+  display: flex;
 }
 .list-unstyled {
-  background:pink;
+  background:white;
   position:absolute;
   width:100%;
   left:0;
   top:100%;
-  padding:10px 0;
+  //padding:10px 0;
   transform:scaleY(0);
   transform-origin:center top;
   transition:all 0.3s ease;
+  z-index:2;
 }
 .list-unstyled.open {
   transform:scaleY(1);

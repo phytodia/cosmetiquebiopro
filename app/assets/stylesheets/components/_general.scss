@@ -12,7 +12,6 @@ header {
       justify-content: center;
       align-items: center;
       .logo {
-        width: 20%;
         height: auto;
       }
       color: white;
@@ -26,7 +25,7 @@ header {
       }
     }
   }
-  nav {
+  #nav {
     background-color: $brown;
     display: flex;
     justify-content: center;

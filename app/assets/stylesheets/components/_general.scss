@@ -93,3 +93,26 @@ footer {
     li:last-of-type { border-right: solid 1px white; }
   }
 }
+.simple_form {
+  margin: 0;
+  padding: 0;
+  &.new_newsletter {
+    display: flex;
+    align-items: center;
+  }
+  div.newsletter_email {
+    margin: 0 !important;
+    margin-right: 1em !important;
+    width: 40%;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-family: 'Barlow';
+  &.cosme {
+    border: solid 2px $light-brown;
+    color: $light-brown;
+    font-weight: 500;
+  }
+}

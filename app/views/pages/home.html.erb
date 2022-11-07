@@ -9,8 +9,8 @@
         <p>Parce que nous souhaitons que <b>vos exigences deviennent nos défis à relever</b>, nous vous proposerons de participer à des sondages, de tester des produits, de nous proposer des idées...</p>
         <p><b>Pour rester informer de l'évolution de notre projet, inscrivez-vous à la newsletter :</b></p>
         <%= simple_form_for(@newsletter) do |f| %>
-          <%= f.input :email %>
-          <%= f.submit %>
+          <%= f.input :email, label: false %>
+          <%= f.submit "Je m'inscris", class: "btn cosme" %>
         <% end %>
       </div>
     </div>
@@ -64,14 +64,3 @@ en co-création avec des esthéticien.ne.s
 </div>
 </section>
 </div>
-<section class="inside">
-<ul>
-<% Newsletter.all.each do |item| %>
-<li><%= item.email %></li>
-<% end %>
-</ul>
-<%= simple_form_for(@newsletter) do |f| %>
-  <%= f.input :email %>
-  <%= f.submit %>
-<% end %>
-</section>

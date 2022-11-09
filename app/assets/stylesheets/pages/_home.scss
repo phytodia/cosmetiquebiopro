@@ -54,5 +54,13 @@
         width: 100%;
       }
     }
+    &.first {
+      .visuel {
+        height: 725px;
+        img {
+          height: 100%;
+        }
+      }
+    }
   }
 }

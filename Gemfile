@@ -51,6 +51,8 @@ gem "sassc-rails"
 
 gem 'postmark-rails'
 
+gem "letter_opener", group: :development
+
 
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"

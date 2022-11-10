@@ -16,6 +16,10 @@ class PagesController < ApplicationController
   end
 
   def contact
+    #fail
+    @user = "hunckler.thomas@hotmail.fr"
+    UserMailer.welcome_email.deliver_now
+    redirect_to root_path
   end
 
   def cgu

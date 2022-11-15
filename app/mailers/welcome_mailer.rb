@@ -3,7 +3,6 @@ class WelcomeMailer < ApplicationMailer
   layout "mailer"
 
   def welcome
-    @greeting = "Hi"
-    mail to: "th@phytodia.com"
+    mail(to: "th@phytodia.com", subject: 'Nouveau contact')
   end
 end

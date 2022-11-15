@@ -5,6 +5,7 @@
 <%= simple_form_for :contact, url: send_path do |f| %>
   <%= f.input :lastname, label:"Nom" %>
   <%= f.input :firstname, label:"Prénom" %>
+  <%= f.input :email, label:"Email" %>
   <%= f.input :message, label:"Message" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>

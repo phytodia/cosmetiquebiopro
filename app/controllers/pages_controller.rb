@@ -22,7 +22,7 @@ class PagesController < ApplicationController
 
   def contact_send
     contact = params[:contact]
-    ContactMailer.new_contact.deliver_now
+    ContactMailer.new_contact(contact).deliver_now
     redirect_to root_path, alert: "Votre message a bien été envoyé"
   end
 

@@ -53,6 +53,9 @@ gem 'letter_opener', group: :development
 
 gem 'postmark-rails'
 
+gem "better_errors"
+gem "binding_of_caller"
+
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"

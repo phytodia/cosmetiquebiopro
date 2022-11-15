@@ -4,6 +4,6 @@ class WelcomeMailer < ApplicationMailer
 
   def welcome
     @greeting = "Hi"
-    mail to: "hunckler.thomas@hotmail.fr"
+    mail to: "th@phytodia.com"
   end
 end

@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+    WelcomeMailer.welcome.deliver_now
   end
 
   def cgu

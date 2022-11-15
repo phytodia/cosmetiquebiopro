@@ -1,5 +1,5 @@
 class WelcomeMailer < ApplicationMailer
-  default from: "from@example.com"
+  default from: "contact@cosmetiquebio.pro"
   layout "mailer"
 
   def welcome

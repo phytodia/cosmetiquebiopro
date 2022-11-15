@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "cgu", to: "pages#cgu", as: :cgu
   get "politique-confidentialite", to: "pages#confidentialite", as: :confidentialite
   get "faq", to: "pages#faq", as: :faq
+  post "contact_send", to: "pages#contact_send", as: :send
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

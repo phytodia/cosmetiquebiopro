@@ -3,9 +3,36 @@
 <h1>Contact</h1>
 
 <%= simple_form_for :contact, url: send_path do |f| %>
-  <%= f.input :lastname, label:"Nom" %>
-  <%= f.input :firstname, label:"Prénom" %>
-  <%= f.input :email, label:"Email" %>
+  <div class="double">
+    <%= f.input :societe, label:"Société" %>
+    <%= f.input :fonction, label:"Fonction" %>
+  </div>
+  <div class="double">
+    <%= f.input :lastname, label:"Nom" %>
+    <%= f.input :firstname, label:"Prénom" %>
+  </div>
+  <div class="double">
+    <%= f.input :email, label:"Email" %>
+    <%= f.input :tel, label:"Tel" %>
+  </div>
+  <div class="double">
+    <%= f.input :address, label:"Adresse" %>
+    <%= f.input :complement, label:"Complément" %>
+  </div>
+  <div class="double">
+  <%= f.input :cp, label:"Code Postal" %>
+  <%= f.input :ville, label:"Ville" %>
+  </div>
+  <%= f.input :pays, label:"Pays" %>
+  <p>Votre établissement</p>
+  <div class="double">
+    <%= f.input :nb_cabine, label:"Nombre de cabines" %>
+    <%= f.input :surface, label:"Surface de magasin" %>
+  </div>
+  <div class="double">
+    <%= f.input :marques_distri, label: "Marques distribuées" %>
+    <%= f.input :budget, label:"Quel est votre budget d'ouverture ?" %>
+  </div>
   <%= f.input :message, label:"Message" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>

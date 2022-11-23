@@ -1,0 +1,16 @@
+.double {
+  display: flex;
+  width: 100%;
+  .mb-3 {width: 100%;}
+  input { width: 100%;}
+  div:first-of-type {
+    margin-right: 10px;
+  }
+}
+.simple_form {
+  &.contact {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+}

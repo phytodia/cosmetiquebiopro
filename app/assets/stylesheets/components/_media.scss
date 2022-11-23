@@ -96,6 +96,13 @@
       width: 100%;
     }
   }
+  .double {
+    width: 100%;
+    display: block;
+    .mb-3 {width: 100%;}
+    input { width: 100%;}
+  }
+
 
 
 

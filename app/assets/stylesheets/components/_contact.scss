@@ -3,6 +3,9 @@
   width: 100%;
   .mb-3 {width: 100%;}
   input { width: 100%;}
+  div:first-of-type {
+    margin-right: 10px;
+  }
 }
 .simple_form {
   &.contact {

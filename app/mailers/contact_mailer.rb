@@ -4,11 +4,23 @@ class ContactMailer < ApplicationMailer
 
   def new_contact(contact)
     @greeting = "Nouveau contact"
-    contact = contact
+    @contact = contact
     @lastname = contact[:lastname]
     @firstname = contact[:firstname]
     @email = contact[:email]
     @message = contact[:message]
-    mail to: "th@phytodia.com"
+    @societe = contact[:societe]
+    @fonction = contact[:fonction]
+    @tel = contact[:tel]
+    @address = contact[:address]
+    @complement = contact[:complement]
+    @cp = contact[:cp]
+    @ville = contact[:ville]
+    @pays = contact[:pays]
+    @nb_cabine = contact[:nb_cabine]
+    @surface = contact[:surface]
+    @marques_distri = contact[:marques_distri]
+    @budget = contact = contact[:budget]
+    mail to: "nif@phytodia.com"
   end
 end

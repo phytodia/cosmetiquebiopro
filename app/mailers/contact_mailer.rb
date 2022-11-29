@@ -20,7 +20,7 @@ class ContactMailer < ApplicationMailer
     @nb_cabine = contact[:nb_cabine]
     @surface = contact[:surface]
     @marques_distri = contact[:marques_distri]
-    @budget = contact = contact[:budget]
+    @budget = contact[:budget]
     mail to: "nif@phytodia.com"
   end
 end

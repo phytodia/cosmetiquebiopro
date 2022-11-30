@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "facebook", to: "pages#facebook"
   get "contact", to: "pages#contact"
   get "cgu", to: "pages#cgu", as: :cgu
+  get "mentions-legales", to: "pages#mentions", as: :mentions
   get "politique-confidentialite", to: "pages#confidentialite", as: :confidentialite
   get "faq", to: "pages#faq", as: :faq
   post "contact_send", to: "pages#contact_send", as: :send

@@ -15,6 +15,9 @@ class PagesController < ApplicationController
   def facebook
   end
 
+  def mentions
+  end
+
   def contact
     #WelcomeMailer.welcome.deliver_now
 

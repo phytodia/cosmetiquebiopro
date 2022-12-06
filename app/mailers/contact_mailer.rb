@@ -21,6 +21,6 @@ class ContactMailer < ApplicationMailer
     @surface = contact[:surface]
     @marques_distri = contact[:marques_distri]
     @budget = contact[:budget]
-    mail to: "nif@phytodia.com"
+    mail to: "th@phytodia.com"
   end
 end

@@ -69,8 +69,19 @@ Pensée dans sa globalité, Nature is Future s’appuye sur les compétences de 
   </div>
 </div>
 
-<div class="inside">
-
+<div class="inside form-2">
+  <div>
+  <h2>Une question,<br>contactez-nous !</h2>
+  <%= simple_form_for :contact, url: send_path do |f| %>
+    <%= f.input :lastname, label:"", placeholder:"Nom" %>
+    <%= f.input :firstname, label:"", placeholder:"Prénom" %>
+    <%= f.input :email, label:"", placeholder:"Adresse-mail" %>
+  </div>
+  <div>
+    <%= f.input :message, as: :text, label:"", placeholder:"Votre message" %>
+    <%= f.button :submit, "Envoyer", class: "btn" %>
+  <% end %>
+  </div>
 </div>
 
 

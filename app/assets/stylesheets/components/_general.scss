@@ -156,6 +156,18 @@ footer {
     font-weight: 500;
   }
 }
+.btn-2 {
+  background-color: white;
+  padding: 5px 15px;
+  color: $new-beige;
+  border: solid 2px $new-beige;
+  border-radius: 10px;
+  text-decoration: none;
+  &.fit {
+    width: fit-content;
+    margin: auto;
+  }
+}
 .new-section {
   h2 { color: #9E9383; }
  display: flex;
@@ -167,4 +179,7 @@ footer {
     p {margin: 0;}
   }
  }
+}
+.center {
+  text-align: center;
 }

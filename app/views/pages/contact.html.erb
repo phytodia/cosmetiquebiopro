@@ -33,7 +33,7 @@
     <%= f.input :marques_distri, label: "Marques distribuées" %>
     <%= f.input :budget, label:"Quel est votre budget d'ouverture ?" %>
   </div>
-  <%= f.input :message, label:"Message" %>
+  <%= f.input :message,as: :text, label:"Message" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>
 </section>

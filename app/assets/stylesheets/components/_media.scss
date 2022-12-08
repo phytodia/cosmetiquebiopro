@@ -140,6 +140,13 @@
       border-radius: 25px;
     }
   }
+  .inside.form-2 {
+    flex-direction: column;
+    form { margin: 0 !important; width: 100% !important;}
+    .simple_form.contact {
+      margin: 0 !important; width: 100% !important;
+    }
+  }
 
 
 

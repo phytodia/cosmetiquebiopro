@@ -84,4 +84,40 @@
       }
     }
   }
+  .inside.form-2 {
+    display: flex;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    h2 { margin-bottom: 1.5em; }
+    form {
+      margin: 0; padding: 0;
+      input {
+        border-radius: 25px;
+        background-color: #F1EEE9;
+        line-height: 2em;
+        color: black;
+        border: none;
+      }
+    }
+    label { display: none; }
+    div { width: 100%;}
+    textarea {
+      border-radius: 25px;
+      background-color: #F1EEE9;
+      line-height: 2em;
+      color: black;
+      border: none;
+    }
+    .form-btn {
+      display: flex;
+      justify-content: end;
+      .btn.btn {
+        //border: solid 1px red;
+        background-color: #9D9483;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
 }

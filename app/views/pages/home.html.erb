@@ -41,7 +41,7 @@ en devenant <a href="">nos Conseiller.e.s Beauté</a> ou <a href="">nos Esthéti
     vos best practices, vos besoins,
     vos envies, les évolutions de notre projet... Vous pourrez également participer
     à nos ateliers d’échanges et de co-création en distanciel.</p>
-  <a href="" class="btn-2 fit">Je participe à la co-création</a>
+    <%= link_to "Je participe à la co-création", contact_path, class:"btn-2 fit" %>
   </div>
 
   <div class="card">
@@ -50,7 +50,7 @@ en devenant <a href="">nos Conseiller.e.s Beauté</a> ou <a href="">nos Esthéti
   <p>Nous recherchons actuellement
     100 Esthéticien.ne.s Consultant.e.s pour tester des produits, construire des protocoles...
     Bref pour créer votre marque idéale avec nous car votre <b>expérience est notre exigence !</b></p>
-  <a href="" class="btn-2 fit">Je m'inscris</a>
+    <%= link_to "Je m'inscris", contact_path, class:"btn-2 fit" %>
   </div>
 </div>
 </div>
@@ -69,8 +69,21 @@ Pensée dans sa globalité, Nature is Future s’appuye sur les compétences de 
   </div>
 </div>
 
-<div class="inside">
-
+<div class="inside form-2">
+  <div>
+  <h2>Une question,<br>contactez-nous !</h2>
+  <%= simple_form_for :contact, url: send_path do |f| %>
+    <%= f.input :lastname, label:"", placeholder:"Nom" %>
+    <%= f.input :firstname, label:"", placeholder:"Prénom" %>
+    <%= f.input :email, label:"", placeholder:"Adresse-mail" %>
+  </div>
+  <div>
+    <%= f.input :message, as: :text, label:"", placeholder:"Votre message", input_html: {rows: 10, cols: 10} %>
+    <div class="form-btn">
+      <%= f.button :submit, "Envoyer", class: "btn" %>
+    </div>
+  <% end %>
+  </div>
 </div>
 
 

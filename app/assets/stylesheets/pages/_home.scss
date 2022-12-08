@@ -6,6 +6,7 @@
   min-height: 100vh;
   h2 {
     font-family: "Arsenal";
+    font-weight: bold;
   }
   .last-bloc {
     background-color: #dcccc2;
@@ -117,6 +118,10 @@
         background-color: #9D9483;
         color: white;
         font-weight: bold;
+      }
+      .btn:before {
+        content:url(images/pictos/picto-envoyer.png);
+        width:150px; display:block;
       }
     }
   }

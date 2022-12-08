@@ -75,6 +75,12 @@
       text-align: center;
       border-radius: 20px;
       margin-bottom: 2em;
+      img {
+        width: auto;
+        height: 6em;
+        object-fit: contain;
+        margin-bottom: 2em;
+      }
     }
   }
 }

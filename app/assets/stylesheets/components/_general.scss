@@ -1,3 +1,6 @@
+a {
+  color: black;
+}
 header {
   background: asset-url('banner-2-cosme.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -96,7 +99,10 @@ main {
   background-color: white;
 }
 h2 {
-  color: $brown;
+  color: #9D9483;
+  &.margin {
+    margin: 2em 0;
+  }
 }
 .inside {
   max-width: 1500px;
@@ -105,6 +111,9 @@ h2 {
   margin: auto;
   h1 {
     text-align: center;
+  }
+  &.padding-2 {
+    padding: 2em 0;
   }
 }
 footer {
@@ -156,15 +165,46 @@ footer {
     font-weight: 500;
   }
 }
+.btn-2 {
+  background-color: white;
+  padding: 5px 15px;
+  color: $new-beige;
+  border: solid 2px $new-beige;
+  border-radius: 10px;
+  text-decoration: none;
+  &.fit {
+    width: fit-content;
+    margin: auto;
+  }
+}
 .new-section {
   h2 { color: #9E9383; }
  display: flex;
  &.first {
-  img { width: 40%;}
+  img {
+    width: 40%;
+    max-height: 550px;
+    object-fit: cover;
+  }
   div {
     padding: 2.5em 5em;
     background-color: #F1EEE9;
     p {margin: 0;}
   }
  }
+}
+.center {
+  text-align: center;
+}
+.background { background-color: #F1EEE9; }
+.flex { display: flex;}
+.padding-2 {
+  justify-content: space-between;
+  .bloc-text {
+    width: 55%;
+  }
+  img {
+    width: 30%;
+    border-radius: 25px;
+  }
 }

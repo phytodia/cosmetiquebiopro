@@ -87,7 +87,7 @@
     }
   }
   h2 {
-    color: red;
+    //color: red;
   }
   .section-home {
     flex-direction: column;
@@ -126,6 +126,21 @@
       padding: 2em;
     }
   }
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  .padding-2 {
+    width: 100%;
+    flex-direction: column !important;
+    padding: 2em !important;
+    .bloc-text, img {
+      width: 100% !important;
+    }
+    img {
+      border-radius: 25px;
+    }
+  }
+
 
 
 

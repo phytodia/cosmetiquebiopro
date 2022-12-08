@@ -1,3 +1,6 @@
+a {
+  color: black;
+}
 header {
   background: asset-url('banner-2-cosme.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -96,7 +99,10 @@ main {
   background-color: white;
 }
 h2 {
-  color: $brown;
+  color: #9D9483;
+  &.margin {
+    margin: 2em 0;
+  }
 }
 .inside {
   max-width: 1500px;
@@ -175,7 +181,11 @@ footer {
   h2 { color: #9E9383; }
  display: flex;
  &.first {
-  img { width: 40%;}
+  img {
+    width: 40%;
+    max-height: 550px;
+    object-fit: cover;
+  }
   div {
     padding: 2.5em 5em;
     background-color: #F1EEE9;

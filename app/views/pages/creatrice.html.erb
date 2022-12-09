@@ -1,5 +1,10 @@
 <div id="creatrice">
 <section class="inside">
 <h1>Creatrice</h1>
+<%= simple_form_for :contact, url: send_path do |f| %>
+  <%= f.text_field :type, value: "creatrice", type: "hidden"  %>
+  <%= f.input :email, label:"Email" %>
+  <%= f.button :submit, "Envoyer", class: "btn cosme" %>
+<% end %>
 </section>
 </div>

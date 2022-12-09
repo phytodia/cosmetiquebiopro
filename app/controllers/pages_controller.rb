@@ -18,6 +18,9 @@ class PagesController < ApplicationController
   def mentions
   end
 
+  def consultantes
+  end
+
   def contact
     #WelcomeMailer.welcome.deliver_now
 

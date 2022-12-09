@@ -1,8 +1,8 @@
-<div id="creatrice">
+<div id="">
 <section class="inside">
-<h1>Creatrice</h1>
+<h1>Devenir consultante</h1>
 <%= simple_form_for :contact, url: send_path do |f| %>
-  <%= f.text_field :type, value: "creatrice", type: "hidden"  %>
+  <%= f.text_field :type, value: "devenir_consultante", type: "hidden"  %>
   <%= f.input :email, label:"Email" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>

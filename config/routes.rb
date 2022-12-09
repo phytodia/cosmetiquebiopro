@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "mentions-legales", to: "pages#mentions", as: :mentions
   get "politique-confidentialite", to: "pages#confidentialite", as: :confidentialite
   get "faq", to: "pages#faq", as: :faq
+  get "devenir-consultante-beaute", to: "pages#consultantes", as: :consultante
   post "contact_send", to: "pages#contact_send", as: :send
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -23,4 +23,19 @@ class ContactMailer < ApplicationMailer
     @budget = contact[:budget]
     mail to: "th@phytodia.com"
   end
+
+  def new_consultante(contact)
+    @greeting = "Consultante"
+    @contact = contact
+    @email = contact[:email]
+    mail to: "th@phytodia.com"
+  end
+
+  def new_creatrice(contact)
+    @greeting = "Créatrice"
+    @contact = contact
+    @email = contact[:email]
+    mail to: "th@phytodia.com"
+  end
+
 end

@@ -18,6 +18,9 @@ class PagesController < ApplicationController
   def mentions
   end
 
+  def consultantes
+  end
+
   def contact
     #WelcomeMailer.welcome.deliver_now
 
@@ -25,7 +28,14 @@ class PagesController < ApplicationController
 
   def contact_send
     contact = params[:contact]
-    ContactMailer.new_contact(contact).deliver_now
+    if params[:contact][:type] == "devenir_consultante"
+      ContactMailer.new_consultante(contact).deliver_now
+
+    elsif params[:contact][:type] == "creatrice"
+      ContactMailer.new_creatrice(contact).deliver_now
+    else
+      ContactMailer.new_contact(contact).deliver_now
+    end
     redirect_to root_path, alert: "Votre message a bien été envoyé"
   end
 

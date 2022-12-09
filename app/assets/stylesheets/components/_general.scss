@@ -200,6 +200,8 @@ footer {
 .flex { display: flex;}
 .padding-2 {
   justify-content: space-between;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
   .bloc-text {
     width: 55%;
   }

@@ -30,13 +30,15 @@ class PagesController < ApplicationController
     contact = params[:contact]
     if params[:contact][:type] == "devenir_consultante"
       ContactMailer.new_consultante(contact).deliver_now
-
+      redirect_to root_path, alert: "Votre inscription a bien été prise en compte"
     elsif params[:contact][:type] == "creatrice"
       ContactMailer.new_creatrice(contact).deliver_now
+      redirect_to root_path, alert: "Votre inscription a bien été prise en compte"
     else
       ContactMailer.new_contact(contact).deliver_now
+      redirect_to root_path, alert: "Votre message a bien été envoyé"
     end
-    redirect_to root_path, alert: "Votre message a bien été envoyé"
+
   end
 
   def cgu

@@ -28,6 +28,7 @@ class ContactMailer < ApplicationMailer
     @greeting = "Consultante"
     @contact = contact
     @email = contact[:email]
+    @file = contact[:attachement]
     mail to: "nif@phytodia.com"
   end
 

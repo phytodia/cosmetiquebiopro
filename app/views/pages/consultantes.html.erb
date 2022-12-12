@@ -7,6 +7,7 @@ Créer votre marque idéale avec nous !!!
 <%= simple_form_for :contact, url: send_path do |f| %>
   <%= f.text_field :type, value: "devenir_consultante", type: "hidden"  %>
   <%= f.input :email, label:"Email" %>
+  <%= f.input :fichier, as: :file, label: "Extrait Kbis/Diplôme d'esthéticienne" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>
 </section>

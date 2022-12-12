@@ -35,6 +35,7 @@ class ContactMailer < ApplicationMailer
     @greeting = "Créatrice"
     @contact = contact
     @email = contact[:email]
+    @date_atelier = contact[:date]
     mail to: "nif@phytodia.com"
   end
 

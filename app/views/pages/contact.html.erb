@@ -4,8 +4,8 @@
 
 <%= simple_form_for :contact, url: send_path do |f| %>
   <div class="double">
-    <%= f.input :societe, label:"Société" %>
-    <%= f.input :fonction, label:"Fonction" %>
+    <%= f.input :societe, label:"Société", required: false %>
+    <%= f.input :fonction, label:"Fonction", required: false %>
   </div>
   <div class="double">
     <%= f.input :lastname, label:"Nom" %>
@@ -26,14 +26,15 @@
   <%= f.input :pays, label:"Pays" %>
   <p>Votre établissement</p>
   <div class="">
-    <%= f.input :nb_cabine, label:"Nombre de cabines" %>
+    <%= f.input :nb_cabine, label:"Nombre de cabines",required: false %>
+    <%= f.input :marques_distri, label: "Marques distribuées",required: false %>
   </div>
   <div class="double">
-    <%= f.input :marques_distri, label: "Marques distribuées" %>
-    <%= f.input :budget, label:"Quel est votre budget d'ouverture ?" %>
+    <%= f.input :budget, label:"Quel est votre budget d'ouverture ?",required: false %>
+    <%= f.input :fichier, as: :file, label:"Upload", label:"Extrait Kbis ou diplôme d'esthéticienne" %>
   </div>
-  <%= f.input :fichier, as: :file, label:"Upload" %>
-  <%= f.input :message,as: :text, label:"Message" %>
+
+  <%= f.input :message, as: :text, label:"Message", required: false, input_html: {rows: 10, cols: 10} %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>
 </section>

@@ -1,6 +1,7 @@
 <div id="creatrice">
 <section class="inside">
 <h1>Devenez une de nos co-créatrice et participez à nos différents ateliers</h1>
+<p>Régulièrement, nous vous interrogerons sur vos habitudes de soins, vos best practices, vos besoins, vos envies, les évolutions de notre projet...pour cela, inscrivez-vous à notre prochain atelier</p>
 <%= simple_form_for :contact, url: send_path do |f| %>
   <%= f.text_field :type, value: "creatrice", type: "hidden"  %>
   <%= f.input :date, collection: ["09/01/2023","16/01/2023","23/01/2023","30/01/2023"], prompt:"Sélectionnez un créneau pour un atelier", label:"Inscrivez-vous à notre prochain atelier" %>

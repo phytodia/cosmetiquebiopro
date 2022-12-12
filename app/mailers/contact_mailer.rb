@@ -21,6 +21,11 @@ class ContactMailer < ApplicationMailer
     @surface = contact[:surface]
     @marques_distri = contact[:marques_distri]
     @budget = contact[:budget]
+
+    fichier = contact[:fichier]
+    attachment_tmp_path = File.absolute_path(fichier.tempfile)
+    attachments['Pièce jointe'] = File.read(attachment_tmp_path)
+
     mail to: "nif@phytodia.com"
   end
 
@@ -28,7 +33,9 @@ class ContactMailer < ApplicationMailer
     @greeting = "Consultante"
     @contact = contact
     @email = contact[:email]
-    @file = contact[:attachement]
+    fichier = contact[:fichier]
+    attachment_tmp_path = File.absolute_path(fichier.tempfile)
+    attachments['Pièce jointe'] = File.read(attachment_tmp_path)
     mail to: "nif@phytodia.com"
   end
 

@@ -21,11 +21,11 @@ class ContactMailer < ApplicationMailer
     @surface = contact[:surface]
     @marques_distri = contact[:marques_distri]
     @budget = contact[:budget]
-
-    fichier = contact[:fichier]
-    attachment_tmp_path = File.absolute_path(fichier.tempfile)
-    attachments['Pièce jointe'] = File.read(attachment_tmp_path)
-
+    if !contact[:fichier].nil?
+      fichier = contact[:fichier]
+      attachment_tmp_path = File.absolute_path(fichier.tempfile)
+      attachments['Pièce jointe'] = File.read(attachment_tmp_path)
+    end
     mail to: "nif@phytodia.com"
   end
 

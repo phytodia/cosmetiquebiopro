@@ -12,6 +12,7 @@
       <li class="brown"><%= link_to "Contactez-nous", contact_path %></li>
     </ul>
   </nav>
+  <% if params[:action] == "home" %>
   <div class="accroche">
     <div class="accroche-text">
     <h2>
@@ -23,5 +24,7 @@ Répondez à notre sondage pour que cette marque devienne <b>votre idéal de soi
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScxH9dgC1aZiuxOO2NMsQGNhpFhrTr2ow5A8EWALP4Yg9XcZw/viewform", target="blank">Je réponds au sondage</a>
     </div>
   </div>
+  <% else %>
+  <% end %>
 </div>
 </header>

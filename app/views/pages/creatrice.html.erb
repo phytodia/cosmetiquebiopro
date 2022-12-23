@@ -6,6 +6,7 @@
   <%= f.text_field :type, value: "creatrice", type: "hidden"  %>
   <%= f.input :date, collection: ["09/01/2023","16/01/2023","23/01/2023","30/01/2023"], prompt:"Sélectionnez un créneau pour un atelier", label:"Inscrivez-vous à notre prochain atelier" %>
   <%= f.input :email, label:"Email" %>
+  <%= f.input :rgpd, as: :boolean,label:"J'accepte que mes données saisies soient utilisées dans le cadre de ma démarche" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>
 </section>

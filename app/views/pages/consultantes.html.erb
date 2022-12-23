@@ -8,6 +8,7 @@ Créez votre marque idéale avec nous !!!
   <%= f.text_field :type, value: "devenir_consultante", type: "hidden"  %>
   <%= f.input :email, label:"Email" %>
   <%= f.input :fichier, as: :file, label: "Extrait Kbis ou diplôme d'esthéticienne" %>
+  <%= f.input :rgpd, as: :boolean,label:"J'accepte que mes données saisies soient utilisées dans le cadre de ma démarche" %>
   <%= f.button :submit, "Envoyer", class: "btn cosme" %>
 <% end %>
 </section>

@@ -79,6 +79,7 @@ Pensée dans sa globalité, Nature is Future s’appuye sur les compétences de 
   </div>
   <div>
     <%= f.input :message, as: :text, label:"", placeholder:"Votre message", input_html: {rows: 10, cols: 10} %>
+    <%= f.input :rgpd, as: :boolean,label:"J'accepte que mes données saisies soient utilisées dans le cadre de ma démarche" %>
     <div class="form-btn">
       <%= f.button :submit, "Envoyer", class: "btn" %>
     </div>
